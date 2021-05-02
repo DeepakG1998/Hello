@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/mapPin"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        map:srcCompat="@drawable/pin" />
+
+    <TextView
+        android:id="@+id/tvAdd"
+        android:layout_width="409dp"
+        android:layout_height="84dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="false"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:background="#fff"/>
+
+    <EditText
+        android:id="@+id/TF_location"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:hint="@string/enter_address"
+        android:inputType="textPersonName" />
+
+ <Button
+     android:id="@+id/button"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentEnd="true"
+     android:layout_marginEnd="57dp"
+     android:onClick="searchLocation"
+     android:text="@string/search"
+     android:textColor="@color/black"
+     tools:layout_width="wrap_content" />
+
+
+</RelativeLayout>
+
